@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* 7個網頁共用的css */
+/* 重製區-------------------------------------------------------- */
+body {
+    font-family: Arial, Helvetica , "儷黑 Pro", "微軟正黑體", "新細明體", sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 模組區-------------------------------------------------------- */
