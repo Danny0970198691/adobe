@@ -8,7 +8,7 @@
     margin-top: -116px;
 }
 
-.nac-btn {
+.nav-btn {
     background-color: #fff;
     width: 15px;
     height: 15px;
@@ -19,7 +19,15 @@
     transition-duration: .3s;
 }
 
-.nac-btn:hover {
+.nav-btn:hover {
+    opacity: 1;
+}
+
+.nav-btn-index {
+    background-color: black;
+}
+
+.nav-btn-active {
     opacity: 1;
 }
 
@@ -45,3 +53,82 @@
     line-height: 1.7;
     text-align: justify;
 }
+
+
+/* 圖片內容---------------------------------------------------- */
+.gtid {
+    /* background-color: antiquewhite; */
+    display: grid;
+}
+
+.gap-s {
+    gap: 1rem;
+}
+
+.gap-m {
+    gap: 1.5rem;
+}
+
+.gap-l {
+    gap: 2rem;
+}
+
+/* 手機板要用 */
+.gtid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gtid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.card {
+    /* background-color: pink; */
+    position: relative;
+    /* 圖片倒影 */
+    -webkit-box-reflect: below -1px linear-gradient(to top, rgba(0, 0, 0, .3) 0, transparent 50%);
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body .fas {
+    color: #fff;
+}
+
+
+/* 透明度---------------------------------------------------- */
+.hover-fade-in .card-body {
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+.hover-fade-in:hover .card-body {
+    opacity: 1;
+}
+
+/* icon控制---------------------------------------------------- */
+.hover-zoom-in .fas {
+    transform: scale(0);
+    transition-duration: .3s;
+}
+
+.hover-zoom-in:hover .fas {
+    transform: scale(1);
+}
+
