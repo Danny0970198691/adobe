@@ -38,6 +38,21 @@ function setScroll() {
 }
 
 
+const $anchors = $('[data-fancybox]')
+$anchors.fancybox({
+    loop: true,
+    media: {
+        youtube: {
+            params: {
+                autoplay: false
+            }
+        }
+    }
+})
+
+
+
+
 
 
 
